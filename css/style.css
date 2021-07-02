@@ -1,0 +1,213 @@
+/* ****** RESET ****** */
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* ****** VARIAVEIS UNIVERSAIS ****** */
+:root{
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --light-blue: #89D2FB;
+    --blue: #0000FF;
+    --background: #F6FAFF;
+
+    --grey-dark: #4D5E77;
+    --grey-blue: #A1B2CD;
+    --grey-light: #E5EAF1;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font: 400 1rem 'DM Sans', sans-serif;
+}
+
+/* ****** SCREEN ONLY ****** */
+.sr-only{
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    margin-left: 1.5rem;
+}
+
+/* ****** HOME ****** */
+
+header{
+    display: flex;
+    box-shadow: 0px 2px 12px var(--black);
+    background: var(--light-blue);
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    font-family: 700 2rem 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+a span{
+    color:black;
+}
+
+.container-fluid{
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
+.container-fluid .btn{
+    width: 10rem;
+    border-radius: 4rem;
+}
+
+a{
+    text-decoration: none;
+    font: 700 2rem 'Poppins',sans-serif;
+    color: blue;
+}
+
+.link{
+    font: 500 1rem 'DM Sans', sans-serif;
+    text-decoration: underline;
+}
+
+.link:hover{
+    cursor: pointer;
+}
+
+input{
+    border: 3px solid var(--light-blue);
+    border-radius: 2rem;
+    text-indent: 0.75rem;
+    line-height: 2rem;
+    transition: .3s;
+    width: 20rem;
+}
+
+.check{
+    width: 1.5rem;
+}
+
+input:focus-within{
+    border: 3px solid var(--black);
+    box-shadow: (0 0 0);
+}
+
+.btn{
+    margin: 0.5rem;
+}
+
+.buttons{
+    display: grid;
+    justify-content: center;
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    margin: 3rem auto 1.5rem auto;
+    width: 100%;
+    justify-content: center;
+}
+
+div .separator div:nth-child(2){
+    width: 5rem;
+}
+
+div .separator div:nth-child(1),
+div .separator div:nth-child(3){
+    background: var(--black);
+    opacity: 0.6;
+    border-radius: 20%;
+    height: 2px;
+    width: 20vw;
+}
+
+/* ****** CADASTRAR ****** */
+
+fieldset{
+    border: 1px;
+    color: var(--black);
+}
+
+
+/* ****** DASHBOARD ****** */
+
+i{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#exit{
+    color: var(--red);
+    font-size: 1.5rem;
+}
+
+#home{
+    margin: 1rem auto 3rem auto;
+    width: 100%;
+}
+
+#menu{
+    display: flex;
+}
+
+#pesos, 
+#atividades, 
+#pressao, 
+#alimentos{
+    background-color: var(--light-blue);
+    border-radius: 50%;
+    padding: 2rem;
+    transition: .3s;
+    width: 100%;
+}
+
+#pesos:hover, 
+#atividades:hover, 
+#pressao:hover, 
+#alimentos:hover{
+    background: rgba(0, 0, 255, 0.8);
+}
+
+#icones{
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+h5{
+    margin-top: 1rem;
+}
+
+#separator{
+    margin: 1.5rem;
+}
+
+#separator-icon{
+    margin: 0.25rem;
+}
+
+/* ****** TABELAS ****** */
+
+td, th{
+    vertical-align: middle;
+}
+
+img.icone{
+    width: 2rem;
+    height: auto;
+}
+
+img.icone_back{
+    width: 3rem;
+    margin: 2rem 0;
+}
